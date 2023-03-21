@@ -31,40 +31,33 @@ body {
     background-color: rgba(30, 20, 40, 1);
 }
 
-/* P A D R Õ E S */
-.botao {
-    display: flex;
-    width: 205px;
-    height: 40px;
-
-    background-color: rgba(250, 170, 0, 1);
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;   
-    color: rgba(0, 0, 0, 1);
-    font-size: 25px;
-    font-family: TitilBold;
-}
-.botao a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-}
-
 /* F O N T  F A M I L I E S */
-.texto-header {
+.texto-header-mobile {
     font-family: Inter;
     font-size: 15px;
 
     color: rgba(255, 255, 255, 1);
 }
+.texto-header {
+    font-family: Inter;
+    font-size: 10px;
+
+    color: rgba(255, 255, 255, 1);
+}
 
 /** MOBILE FIRST **/
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 767px) {
     /* H E A D E R */
+    .logotipo {
+        display: none;
+    }
     .header-top {
         display: none;
     }
     .header-bottom {
+        display: none;
+    }
+    .texto-header {
         display: none;
     }
     
@@ -79,8 +72,6 @@ body {
         align-items: center;
 
         position: fixed;
-        top: 0;
-        left: 0;
     }
 
     .barrinha {
@@ -91,7 +82,7 @@ body {
         width: 30px;
         height: 10px;
     }
-    .logotipo {
+    .logotipo-mobile {
         width: 85px;
     }
 
@@ -205,112 +196,172 @@ body {
         right: -20vw;
         transition: right 0.4s;
     }
+
     /* M A I N */
-    /* Banner */
-    .banner{
+    main {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bk-login-mobile {
         display: flex;
         width: 100%;
-        height: 605px;
+        height: 690px;
+    }
 
-        justify-content: center;
+    .caixa-form-border {
+        display: flex;
+        width: 337px;
+        height: 464px;
+
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+        border-radius: 10px;
 
         position: absolute;
-        top: 60px;
-        left: 0;
+
     }
-    .banner-desktablet {
+    .caixa-form {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/** TABLET FIST **/
+@media screen and (min-width:768px){
+    .header-menu-usuário{
         display: none;
     }
-    .banner-mobile {
+    .header-menu-lateral {
+        display: none;
+    }
+    .texto-header-mobile {
+        display: none;
+    }
+    .logotipo-mobile {
+        display: none;
+    }
+    .redes-sociais {
+        display: none;
+    }
+
+    /* H E A D E R */
+    /* Header Top */
+    
+    header .header-top {
         display: flex;
         width: 100%;
-        height: 100%;
+        height: 50px;
+        z-index: 100;
 
-        position: absolute;
-        top: 0;
-        left: 0;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(250, 170, 0, 1);
     }
-    .titulo {
+    .contatos {
         display: flex;
-        width: 230px;
-        height: 65px;
+        width: 360px;
+        height: 20px;
 
-        color: rgba(255, 255, 255, 1);
-        text-shadow:0 0 7px rgba(250, 65, 85, 1);
-        font-size: 40px;
-        font-family: TitilBlack;
+        align-items: center;
+        justify-content: space-between;
 
         position: absolute;
-        top: 15px;
+        left: 60px;
     }
-
-    .botao-banner {
+    .phone {
         display: flex;
+        width: 110px;
+        height: 20px;
 
-        position: absolute;
-        bottom: 90px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mail {
+        display: flex;
+        width: 155px;
+        height: 20px;
+
+        align-items: center;
+        justify-content: space-between;
     }
 
-    /* Games */
-    .games {
+    .redes-sociais-desktablet {
+        display: flex;    
+        width: 145px;
+        height: 20px;
+
+        align-items: center;
+        justify-content: space-between;
+
+        position: absolute;
+        right: 60px;
+
+    }
+
+    /* Header Bottom */
+    .header-bottom {
         display: flex;
         width: 100%;
-        height: 590px;
+        height: 90px;
+        z-index: 100;
 
+        align-items: center;
         justify-content: center;
 
         position: absolute;
-        top: 665px;
+        top: 50px;
     }
-
-    .mais-popular {
+    .header-bottom .logotipo {
         display: flex;
-        height: 50vw;
-        border-radius: 10px;
+        width: 155px;
 
         position: absolute;
-        top: 70px;
+        left: 60px;
+        top: 20px;
     }
-    .blur_sessao-gamer {
+    .header-bottom .navs-principais {
         display: flex;
-        width: 100%;
-        height: 60px;
+        width: 300px;
+        height: 15px;
+        z-index: 100;
+        
+       justify-content: space-between;
+       color: rgba(255, 255, 255, 1);
+    }
+    .navs-principais a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+    }
+    .here {
+        color: rgba(250, 170, 0, 1);
+    }
+    
+    .usuario {
+        display: flex;
+        width: 145px;
 
-        background-image: linear-gradient(to right rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
-        backdrop-filter: blur(2px);
-        border: 1px solid rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
 
         position: absolute;
-        bottom: 0;
+        right: 60px;
     }
+} 
 
-
-    /*  Info */
-    .info {
-        display: flex;
-        width: 100%;    
-        height: 1535px;
-
-        background-color: rgba(250, 170, 0, 1);
-
-        position: absolute;
-        top: 1225px;
-    }
-
-    /* News */
-    .news {
-        display: flex;
-        width: 100%;
-        height: 3675px;
-
-        position: absolute;
-        top: 2760px;
-    }
-    .background-news-mobile {
-        display: flex;
-        width: 100%;
-        height: 100%;
-    }
-    /* F O O T E R */
+.mais-popular {
+    display: none;
+}
+.banner {
+    display: none;
 }

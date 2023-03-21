@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Gamer</title>
+    <link rel="stylesheet" href="../Login/css/login.css">
+</head>
+
+<body>
+    <header>
+        <!-- Para Mobile -->
+        <div class="header-menu-lateral texto-header-mobile">
+            <img onclick="mostrarMenu()" src="../Inicio/assets/icons/ícone-barrinha.svg"
+                alt="Abrir/Fechar Menu lateral">
+
+            <div class="menu" id="menu">
+                <nav class="navs-principais">
+                    <a href=""><span class="here">Início</span></a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
+                </nav>
+
+                <div class="contatos">
+                    <div class="phone">
+                        <img src="../Inicio/assets/icons/ícone_telefone.svg" alt="Telefone de Contato">
+                        <p>(11) 0900-1010</p>
+                    </div>
+
+                    <div class="mail">
+                        <img src="../Inicio/assets/icons/ícone_email.svg" alt="Email de Contato">
+                        <p>contato@gamer.com.br</p>
+                    </div>
+                </div>
+                <div class="redes-sociais">
+                    <a href="">
+                        <img src="../Inicio/assets/icons/logo_facebook.svg" alt="Entrar no Facebook">
+                    </a>
+                    <a href="">
+                        <img src="../Inicio/assets/icons/logo_linkedin.svg" alt="Entrar no Linkedin">
+                    </a>
+                    <a href="">
+                        <img src="../Inicio/assets/icons/logo_instagram.svg" alt="Entrar no Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img class="logotipo-mobile" src="../Inicio/assets/images/logotipo_principal.png"
+            alt="Logotipo do Projeto Gamer, Controle de videogame escrito Gamer no meio">
+
+        <div class="header-menu-usuário">
+            <img onclick="mostrarUsuario()" src="../Inicio/assets/icons/ícone_bolinha.svg" alt="Abrir Menu de Usuário">
+
+            <div class="usuario" id="usuario">
+                <a href=""><img src="../Inicio/assets/icons/ícone_usuário.svg" alt="Entrar na Seessão Usuários"></a>
+                <a href=""><img src="../Inicio/assets/icons/ícone_sacola.svg" alt="Entrar na Sessão de Compras"></a>
+                <a href=""><img src="../Inicio/assets/icons/ícone_pesquisar.svg" alt="Acessar Caixa de pesquisa"></a>
+            </div>
+        </div>
+
+        <!-- Para Desktop & Tablet -->
+        <div class="header-top">
+            <div class="contatos texto-header">
+                <div class="phone">
+                    <img src="../Inicio/assets/icons/ícone_telefone.svg" alt="Telefone de Contato">
+                    <p>(11) 0900-1010</p>
+                </div>
+
+                <div class="mail">
+                    <img src="../Inicio/assets/icons/ícone_email.svg" alt="Email de Contato">
+                    <p>contato@gamer.com.br</p>
+                </div>
+            </div>
+
+            <div class="redes-sociais-desktablet">
+                <a href="">
+                    <img src="../Inicio/assets/icons/logo_facebook.svg" alt="Entrar no Facebook">
+                </a>
+                <a href="">
+                    <img src="../Inicio/assets/icons/logo_linkedin.svg" alt="Entrar no Linkedin">
+                </a>
+                <a href="">
+                    <img src="../Inicio/assets/icons/logo_instagram.svg" alt="Entrar no Instagram">
+                </a>
+            </div>
+        </div>
+
+        <div class="header-bottom texto-header">
+            <img class="logotipo" src="../Inicio/assets/images/logotipo_principal.png"
+                alt="Logotipo do Projeto Gamer, Controle de videogame escrito Gamer no meio">
+
+            <nav class="navs-principais">
+                <a href=""><span class="here">Início</span></a>
+                <a href="">Jogadores</a>
+                <a href="">Equipes</a>
+                <a href="">Notícias</a>
+            </nav>
+
+            <div class="usuario" id="usuario">
+                <a href=""><img src="../Inicio/assets/icons/ícone_usuário.svg" alt="Entrar na Seessão Usuários"></a>
+                <a href=""><img src="../Inicio/assets/icons/ícone_sacola.svg" alt="Entrar na Sessão de Compras"></a>
+                <a href=""><img src="../Inicio/assets/icons/ícone_pesquisar.svg" alt="Acessar Caixa de pesquisa"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img class="bk-login-mobile" src="../Login/assets/images/Banner_Login.png">
+
+        <div class="caixa-form-border">
+            <div class="caixa-form">
+                <h1>LOGIN</h1>
+
+                <form action="">
+                    <label for="email"></label>
+                    <input type="text" id="email" placeholder="Digite o seu Email">
+
+                    <br>
+
+                    <br>
+
+                    <label for="senha"></label>
+                    <input type="password" id="senha" placeholder="Digite a sua Senha">
+                </form>
+
+                <button type="button">
+                    <p>Logar</p>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<script>
+    function mostrarMenu() {
+        document.getElementById("menu").classList.toggle("mostrar-menu")
+    }
+    function mostrarUsuario() {
+        document.getElementById("usuario").classList.toggle("mostrar-usuario")
+    }
+</script>
+
+</html>
