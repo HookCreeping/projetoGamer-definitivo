@@ -210,20 +210,91 @@ body {
         width: 100%;
         height: 690px;
     }
-
-    .caixa-form-border {
-        display: flex;
-        width: 337px;
-        height: 464px;
-
-        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-        border-radius: 10px;
-
-        position: absolute;
-
-    }
     .caixa-form {
         display: flex;
+        width: 335px;
+        height: 462px;
+
+        border: solid 1px transparent;
+        background-image: linear-gradient(to right bottom, rgba(30, 20, 40, 0.8), rgb(60, 5, 65, 0.6)), radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        top: 80px;
+    }
+    .titulo-form {
+        display: flex;
+        width: 90px;
+        height: 50px;
+
+        color: rgba(255, 255, 255, 1);
+        font-family: TitilBlack;
+        border-top: 3px solid rgba(250, 170, 0, 1);
+        align-items: center;
+
+        position: absolute;
+        top: 45px;
+    }
+    .caixinha {
+        display: flex;
+        width: 200px;
+        height: 40px;
+
+        outline: none;
+        background: none;
+        border: none;
+    }
+    .icone-caixinha {
+        display: flex;
+        width: 20px;
+        height: 20px;
+    }
+    .icone-usubranco {
+        display: flex;
+    }
+    main .caixa-form form {
+        display: flex;
+
+        flex-direction: column;
+
+        position: absolute;
+        top: 180px;
+    }
+    main .caixa-form button {
+        display: flex;
+        width: 275px;
+        height: 40px;
+
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(250, 170, 0, 1);
+        border: none;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-family: TitilBold;
+
+        position: absolute;
+        top: 345px;
+    }
+    main .caixa-form .boxizinha {
+        display: flex;
+        width: 275px;
+        height: 40px;
+
+        color: rgba(255, 255, 255, 1);
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), radial-gradient(circle at top left, rgba(255 ,255, 255, 0.5), rgba(255, 255, 255, 0.1));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-color: transparent;
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 1);
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
