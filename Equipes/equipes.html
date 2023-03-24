@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Gamer</title>
-    <link rel="stylesheet" href="../Login/css/login.css">
+    <title>Projeto Gamer - Equipes</title>
+    <link rel="stylesheet" href="css/equipes.css">
 </head>
 
 <body>
@@ -19,8 +19,8 @@
             <div class="menu" id="menu">
                 <nav class="navs-principais">
                     <a href="">Início</a>
-                    <a href=""><span class="here">Jogadores</span></a>
-                    <a href="">Equipes</a>
+                    <a href="">Jogadores</a>
+                    <a href=""><span class="here">Equipes</span></a>
                     <a href="">Notícias</a>
                 </nav>
 
@@ -94,9 +94,9 @@
                 alt="Logotipo do Projeto Gamer, Controle de videogame escrito Gamer no meio">
 
             <nav class="navs-principais">
-                <a href=""><span class="here">Início</span></a>
+                <a href="">Início</a>
                 <a href="">Jogadores</a>
-                <a href="">Equipes</a>
+                <a href=""><span class="here">Equipes</span></a>
                 <a href="">Notícias</a>
             </nav>
 
@@ -109,45 +109,25 @@
     </header>
 
     <main>
-        <img class="bk-login-mobile" src="../Login/assets/images/Banner_Login.png">
-        <div class="caixa-form">
-            <h1 class="titulo-form">LOGIN</h1>
+        <img class="bk-equipes" src="../Equipes/assets/images/Banner_cadastro_de_Equipe.png" alt="">
+
+        <div class="retangulo-cadastro">
+            <h1>Cadastro de Equipes</h1>
 
             <form action="">
-                <label for="email">
-                    <div class="boxizinha">
-                        <img class="icone-caixinha icone-usubranco" src="../Login/assets/icons/Icone-usuario-branco.svg"
-                            alt="">
-                        <input class="caixinha" type="text" id="email" placeholder="Digite o seu Email">
-                    </div>
-                </label>
-
-
+                <input class="boxizinha" type="text" placeholder="Digite o ID da sua equipe">
                 <br>
-
+                <input class="boxizinha" type="text" placeholder="Digite o nome da sua equipe">
                 <br>
-
-
-                <label for="senha">
-                    <div class="boxizinha"><img class="icone-caixinha icone-chave"
-                            src="../Login/assets/icons/icone-chave.svg" alt="">
-                        <input class="caixinha" type="password" id="senha" placeholder="Digite a sua Senha">
-                    </div>
-                </label>
-
+                <div class="botao-boxizinha"><button class="mini-boxizinha">Imagem da equipe</button>
+                    <p>Nenhuma imagem selecionada</p>
+                </div>
             </form>
 
-            <button type="button">
-                <p>Logar</p>
-            </button>
+            <button type="submit">Cadastro</button>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
-
 <script>
     function mostrarMenu() {
         document.getElementById("menu").classList.toggle("mostrar-menu")

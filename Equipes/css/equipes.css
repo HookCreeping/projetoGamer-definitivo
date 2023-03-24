@@ -200,19 +200,21 @@ body {
     /* M A I N */
     main {
         display: flex;
-        
-        justify-content: center;
+        width: 100%;
+        height: 1230px;
+
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
-    
-    .bk-login-mobile {
+    main .bk-equipes {
         display: flex;
         width: 100%;
-        height: 690px;
+        height: 100%;
     }
-    .caixa-form {
+    main .retangulo-cadastro {
         display: flex;
-        width: 335px;
+        width: 310px;
         height: 462px;
 
         border: solid 1px transparent;
@@ -224,73 +226,32 @@ body {
         align-items: center;
 
         position: absolute;
-        top: 80px;
+        top: 140px;
     }
-    .titulo-form {
+    main .retangulo-cadastro h1 {
         display: flex;
-        width: 90px;
-        height: 50px;
+        width: 265px;
+        height: 45px;
 
-        color: rgba(255, 255, 255, 1);
-        font-family: TitilBlack;
-        border-top: 3px solid rgba(250, 170, 0, 1);
-        align-items: center;
-
-        position: absolute;
-        top: 45px;
-    }
-    .caixinha {
-        display: flex;
-        width: 200px;
-        height: 40px;  
-
-        color: rgba(255, 255, 255, 1);
-        font-size: 16px;
-        font-family: TitilReg;
-        outline: none;
-        background: none;
-        border: none;
-    }
-    .icone-caixinha {
-        display: flex;
-        width: 20px;
-        height: 20px;
-        
-    }
-    .caixinha::placeholder {
-        color: rgba(255, 255, 255, 1);
-    }
-    .icone-usubranco {
-        display: flex;
-    }
-    main .caixa-form form {
-        display: flex;
-
-        flex-direction: column;
-
-        position: absolute;
-        top: 180px;
-    }
-    main .caixa-form button {
-        display: flex;
-        width: 275px;
-        height: 40px;
-
-        color: rgba(0, 0, 0, 1);
-        background-color: rgba(250, 170, 0, 1);
-        border: none;
-        border-radius: 10px;
         align-items: center;
         justify-content: center;
+        border-bottom: solid 3px rgba(250, 170, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        font-family: TitilBlack;
         font-size: 25px;
-        font-family: TitilBold;
-
-        position: absolute;
-        top: 345px;
     }
-    main .caixa-form .boxizinha {
+    main .retangulo-cadastro form {
         display: flex;
         width: 275px;
+        height: 170px;
+
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main .retangulo-cadastro form .boxizinha {
+        display: flex;
+        width: 100%;
         height: 40px;
 
         color: rgba(255, 255, 255, 1);
@@ -302,144 +263,58 @@ body {
         border-color: rgba(255, 255, 255, 1);
         justify-content: space-around;
         align-items: center;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        font-family: TitilReg;
+        outline: none;
+        border: none;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-/** TABLET FIST **/
-@media screen and (min-width:768px){
-    .header-menu-usuário{
-        display: none;
+    main .retangulo-cadastro form .boxizinha::placeholder {
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        font-family: TitilReg;
     }
-    .header-menu-lateral {
-        display: none;
-    }
-    .texto-header-mobile {
-        display: none;
-    }
-    .logotipo-mobile {
-        display: none;
-    }
-    .redes-sociais {
-        display: none;
-    }
-
-    /* H E A D E R */
-    /* Header Top */
-    
-    header .header-top {
+    main .retangulo-cadastro form .mini-boxizinha {
         display: flex;
-        width: 100%;
-        height: 50px;
-        z-index: 100;
+        width: 125px;
+        height: 40px;
 
+        background-color: rgba(215, 215, 215, 1);
+        border-radius: 7.5px;
+        border: none;
+        color: rgba(0, 0, 0, 1);
+        font-size: 15px;
+        font-family: TitilBold;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(250, 170, 0, 1);
     }
-    .contatos {
+    main .retangulo-cadastro form p {
         display: flex;
-        width: 360px;
-        height: 20px;
-
-        align-items: center;
-        justify-content: space-between;
-
-        position: absolute;
-        left: 60px;
+        
+        font-size: 10px;
+        font-family: TitilReg;
+        color: rgba(255, 255, 255, 1);
     }
-    .phone {
+    .botao-boxizinha {
         display: flex;
-        width: 110px;
-        height: 20px;
+        width: 275px;
 
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-    .mail {
+    main button {
         display: flex;
-        width: 155px;
-        height: 20px;
+        width: 270px;
+        height: 40px;
 
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .redes-sociais-desktablet {
-        display: flex;    
-        width: 145px;
-        height: 20px;
-
-        align-items: center;
-        justify-content: space-between;
-
-        position: absolute;
-        right: 60px;
-
-    }
-
-    /* Header Bottom */
-    .header-bottom {
-        display: flex;
-        width: 100%;
-        height: 90px;
-        z-index: 100;
-
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(250, 170, 0, 1);
+        border: none;
+        border-radius: 10px;
         align-items: center;
         justify-content: center;
-
-        position: absolute;
-        top: 50px;
+        font-size: 25px;
+        font-family: TitilBold;
     }
-    .header-bottom .logotipo {
-        display: flex;
-        width: 155px;
-
-        position: absolute;
-        left: 60px;
-        top: 20px;
-    }
-    .header-bottom .navs-principais {
-        display: flex;
-        width: 300px;
-        height: 15px;
-        z-index: 100;
-        
-       justify-content: space-between;
-       color: rgba(255, 255, 255, 1);
-    }
-    .navs-principais a {
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
-    }
-    .here {
-        color: rgba(250, 170, 0, 1);
-    }
-    
-    .usuario {
-        display: flex;
-        width: 145px;
-
-        align-items: center;
-        justify-content: space-between;
-
-        position: absolute;
-        right: 60px;
-    }
-} 
-
-.mais-popular {
-    display: none;
-}
-.banner {
-    display: none;
 }
